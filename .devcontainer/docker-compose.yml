@@ -1,0 +1,9 @@
+services:
+
+  pancito:
+    image: pandoc/latex
+    container_name: pancito
+    volumes:
+      - ./:/data
+    working_dir: /data
+    command: tail -f /dev/null
